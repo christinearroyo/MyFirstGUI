@@ -57,5 +57,30 @@ namespace MyFirstGUI
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+            lblHello.Text = "Mocha and Milk <3";
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            lblHello.Text = "Daniel and Christine :>";
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            lblHello.Text = "Magcode kana Danielll";
+        }
     }
 }
