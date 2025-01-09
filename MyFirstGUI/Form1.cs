@@ -65,7 +65,7 @@ namespace MyFirstGUI
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
         }
 
         private void tabPage2_Click(object sender, EventArgs e)
