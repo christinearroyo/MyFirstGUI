@@ -70,17 +70,17 @@ namespace MyFirstGUI
 
         private void tabPage2_Click(object sender, EventArgs e)
         {
-            lblHello.Text = "Mocha and Milk <3";
+            lblHello.Text = "Yoo";
         }
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            lblHello.Text = "Daniel and Christine :>";
+            lblHello.Text = "Christine";
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            lblHello.Text = "Magcode kana Danielll";
+            lblHello.Text = "Magcode kana Arroyo";
         }
     }
 }
