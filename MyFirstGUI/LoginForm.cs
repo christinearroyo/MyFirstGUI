@@ -19,11 +19,18 @@ namespace MyFirstGUI
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
+            Login();
+        }
+
+        private void Login()
+        {
             string id = txtUserID.Text;
             string pass = txtPassword.Text;
 
             if (id == "i25" && pass == "123456")
             {
+                this.Hide();
+
                 Form1 f = new Form1();
                 f.Show();
             }
@@ -33,11 +40,26 @@ namespace MyFirstGUI
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ResetMyForm()
         {
             txtUserID.Text = "";
             txtPassword.Text = "";
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ResetMyForm();
+        }
 
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                Login();
+            }
+            if (e.KeyChar == (char)Keys.Escape) 
+            {
+                ResetMyForm();
+            }
         }
     }
 }
