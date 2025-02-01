@@ -121,5 +121,29 @@ namespace MyFirstGUI
                 MessageBox.Show(input + " is the Creator's 1st Brother");
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("1. To Purchase Press Yes " +
+                "\n 2. Press No if Not Interested " +
+                "\n 3. Click Cancel to Cancel Order",
+            "Purchase Software", MessageBoxButtons.YesNoCancel,
+            MessageBoxIcon.Information);
+
+            if (dr == DialogResult.Yes)
+            {
+                lblSubscription.Text = "Your Subscription has been purchased!";
+            }
+            if (dr == DialogResult.No)
+            {
+                lblCanceled.Text = "User Not Interested";
+            }
+            if (dr == DialogResult.Cancel)
+            {
+                lblCanceled.Text = "Your Payment has been Canceled";
+            }
+
+
+        }
     }
 }
