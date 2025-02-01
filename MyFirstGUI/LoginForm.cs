@@ -27,7 +27,7 @@ namespace MyFirstGUI
             string id = txtUserID.Text;
             string pass = txtPassword.Text;
 
-            if (id == "i25" && pass == "123456")
+            if (id == "tin" && pass == "12345678")
             {
                 this.Hide();
 
@@ -60,6 +60,11 @@ namespace MyFirstGUI
             {
                 ResetMyForm();
             }
+        }
+
+        private void txtUserID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

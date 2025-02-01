@@ -12,10 +12,13 @@ namespace MyFirstGUI
 {
     public partial class SignUpForm : Form
     {
-        private object fname;
-        private object lname;
-        private string emailAddress;
-        private object txtLasttName;
+        public static string fname;
+        public static string lname;
+        public static string emailAddress;
+        public static string txtLasttName;
+        public static Boolean sms;
+        public static Boolean report;
+        public static Boolean transactions;
 
         Confirmation c = new Confirmation();
         public SignUpForm()
@@ -34,7 +37,10 @@ namespace MyFirstGUI
             lname = txtLastName.Text;
             emailAddress = txtEmailAddress.Text;
 
-            c.Show();
+            this.Hide();
+
+            LoginForm l = new LoginForm();
+            l.Show();
         }
 
 
@@ -49,10 +55,14 @@ namespace MyFirstGUI
             if (chkSMS.Checked)
             {
                 chkSMS.Checked = true;
+
+                lblSMS.Text = "Services SMS Notification Applied";
             }
             else
             {
                 chkSMS.Checked = false;
+
+                lblSMS.Text = "...";
             }
         }
 
@@ -73,11 +83,20 @@ namespace MyFirstGUI
             if (chkTransaction.Checked)
             {
                 chkTransaction.Checked = true;
+
+                lblTransaction.Text = "Services SMS Notification Applied";
             }
             else
             {
                 chkTransaction.Checked = false;
+
+                lblTransaction.Text = "...";
             }
+        }
+
+        private void txtFirstName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

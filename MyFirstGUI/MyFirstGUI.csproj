@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Confirmation.cs" />
+    <Compile Include="ConformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConformationForm.Designer.cs">
+      <DependentUpon>ConformationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
