@@ -97,5 +97,29 @@ namespace MyFirstGUI
 
             this.Hide();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string input;
+
+            if (radioButton1.Checked == true)
+            {
+                input = radioButton1.Text;
+
+                MessageBox.Show(input + " is the Creator");
+            }
+            if (radioButton2.Checked == true)
+            {
+                input = radioButton2.Text;
+
+                MessageBox.Show(input + " is the Creator's 2nd Brother");
+            }
+            if (radioButton3.Checked == true)
+            {
+                input = radioButton3.Text;
+
+                MessageBox.Show(input + " is the Creator's 1st Brother");
+            }
+        }
     }
 }
