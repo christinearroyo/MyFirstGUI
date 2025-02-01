@@ -84,5 +84,15 @@ namespace MyFirstGUI
         {
             lblHello.Text = "Magcode kana Arroyo";
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

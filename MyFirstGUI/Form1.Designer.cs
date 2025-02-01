@@ -43,6 +43,7 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
             this.lblHello = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -56,6 +57,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -72,6 +74,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Home";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // panel1
             // 
@@ -237,6 +240,17 @@
             this.lblHello.TabIndex = 0;
             this.lblHello.Text = "hi";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(728, 406);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "DateTime";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -273,6 +287,7 @@
         private System.Windows.Forms.Label lblHello;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }
 
