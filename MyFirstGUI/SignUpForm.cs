@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,9 +19,9 @@ namespace MyFirstGUI
         public static string txtLasttName;
         public static Boolean sms;
         public static Boolean report;
-        public static Boolean transactions;
+        public static Boolean transaction;
 
-        Confirmation c = new Confirmation();
+        ConfirmationForm c = new ConfirmationForm();
         public SignUpForm()
         {
             InitializeComponent();
@@ -37,10 +38,9 @@ namespace MyFirstGUI
             lname = txtLastName.Text;
             emailAddress = txtEmailAddress.Text;
 
-            this.Hide();
+            c.Show();
 
-            LoginForm l = new LoginForm();
-            l.Show();
+            this.Hide();
         }
 
 
@@ -54,13 +54,13 @@ namespace MyFirstGUI
         {
             if (chkSMS.Checked)
             {
-                chkSMS.Checked = true;
+                sms = true;
 
                 lblSMS.Text = "Services SMS Notification Applied";
             }
             else
             {
-                chkSMS.Checked = false;
+                sms= false;
 
                 lblSMS.Text = "...";
             }
@@ -70,11 +70,11 @@ namespace MyFirstGUI
         {
             if (chkReport.Checked)
             {
-                chkReport.Checked = true;
+                report = true;
             }
             else
             {
-                chkReport.Checked = false;
+                report = false;
             }
         }
 
@@ -82,19 +82,24 @@ namespace MyFirstGUI
         {
             if (chkTransaction.Checked)
             {
-                chkTransaction.Checked = true;
+                transaction = true;
 
                 lblTransaction.Text = "Services SMS Notification Applied";
             }
             else
             {
-                chkTransaction.Checked = false;
+                transaction= false;
 
                 lblTransaction.Text = "...";
             }
         }
 
         private void txtFirstName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
