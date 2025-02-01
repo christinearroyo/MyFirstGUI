@@ -52,6 +52,12 @@
     <Compile Include="ConfirmationForm.Designer.cs">
       <DependentUpon>ConfirmationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DateandTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateandTimeForm.Designer.cs">
+      <DependentUpon>DateandTimeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="ConfirmationForm.resx">
       <DependentUpon>ConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateandTimeForm.resx">
+      <DependentUpon>DateandTimeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
