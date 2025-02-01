@@ -43,6 +43,7 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
             this.lblHello = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -182,6 +183,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.btnLogout);
             this.tabPage2.Controls.Add(this.btnCancel);
             this.tabPage2.Controls.Add(this.btnInsert);
@@ -238,6 +240,16 @@
             this.lblHello.TabIndex = 0;
             this.lblHello.Text = "hi";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(497, 22);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(186, 28);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Check Date and Time";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -274,6 +286,7 @@
         private System.Windows.Forms.Label lblHello;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button button2;
     }
 }
 

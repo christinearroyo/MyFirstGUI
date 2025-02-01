@@ -89,5 +89,13 @@ namespace MyFirstGUI
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DateandTimeForm dateandTime = new DateandTimeForm();
+            dateandTime.Show();
+
+            this.Hide();
+        }
     }
 }

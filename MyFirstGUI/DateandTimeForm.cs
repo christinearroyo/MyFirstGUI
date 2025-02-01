@@ -36,5 +36,19 @@ namespace MyFirstGUI
         {
             
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            Form1 frm = new Form1();
+            frm.Show();
+
+        }
+
+        private void DateandTimeForm_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

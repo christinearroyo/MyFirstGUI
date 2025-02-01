@@ -35,12 +35,13 @@
             this.lblDT2 = new System.Windows.Forms.Label();
             this.lblDT1 = new System.Windows.Forms.Label();
             this.dtpicker = new System.Windows.Forms.DateTimePicker();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dtshow
             // 
             this.dtshow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtshow.Location = new System.Drawing.Point(577, 350);
+            this.dtshow.Location = new System.Drawing.Point(459, 348);
             this.dtshow.Name = "dtshow";
             this.dtshow.Size = new System.Drawing.Size(105, 38);
             this.dtshow.TabIndex = 13;
@@ -108,11 +109,23 @@
             this.dtpicker.TabIndex = 7;
             this.dtpicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(582, 348);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(105, 38);
+            this.btnBack.TabIndex = 14;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // DateandTimeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dtshow);
             this.Controls.Add(this.lblDT5);
             this.Controls.Add(this.lblDT4);
@@ -122,6 +135,7 @@
             this.Controls.Add(this.dtpicker);
             this.Name = "DateandTimeForm";
             this.Text = "DateandTimeForm";
+            this.Load += new System.EventHandler(this.DateandTimeForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,5 +150,6 @@
         private System.Windows.Forms.Label lblDT2;
         private System.Windows.Forms.Label lblDT1;
         private System.Windows.Forms.DateTimePicker dtpicker;
+        private System.Windows.Forms.Button btnBack;
     }
 }

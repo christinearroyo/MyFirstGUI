@@ -16,7 +16,7 @@ namespace MyFirstGUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DateandTimeForm());
+            Application.Run(new Form1());
         }
     }
 }
